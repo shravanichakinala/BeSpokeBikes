@@ -1,0 +1,53 @@
+<div class="container mt-5">
+  <div class="card shadow-lg p-4" style="max-width: 600px; margin: auto; border-radius: 10px;">
+    <div class="card-body">
+      <h3 class="card-title text-center text-primary mb-4">Update Product</h3>
+
+      <form (ngSubmit)="updateProduct()">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" class="form-control" [(ngModel)]="product.name" name="name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="manufacturer" class="form-label">Manufacturer</label>
+          <input type="text" id="manufacturer" class="form-control" [(ngModel)]="product.manufacturer" name="manufacturer" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="style" class="form-label">Style</label>
+          <input type="text" id="style" class="form-control" [(ngModel)]="product.style" name="style" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="purchasePrice" class="form-label">Purchase Price</label>
+          <input type="number" id="purchasePrice" class="form-control" [(ngModel)]="product.purchasePrice" name="purchasePrice" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="salePrice" class="form-label">Sale Price</label>
+          <input type="number" id="salePrice" class="form-control" [(ngModel)]="product.salePrice" name="salePrice" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="qtyOnHand" class="form-label">Quantity on Hand</label>
+          <input type="number" id="qtyOnHand" class="form-control" [(ngModel)]="product.qtyOnHand" name="qtyOnHand" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="commissionPercentage" class="form-label">Commission Percentage</label>
+          <input type="number" id="commissionPercentage" class="form-control" [(ngModel)]="product.commissionPercentage" name="commissionPercentage" required>
+        </div>
+
+        <div class="d-flex justify-content-between mt-4">
+          <button type="submit" class="btn btn-primary w-45" style="border-radius: 5px;">
+            <i class="bi bi-check-circle"></i> Update Product
+          </button>
+          <button type="button" class="btn btn-secondary w-45" (click)="cancel()" style="border-radius: 5px;">
+            <i class="bi bi-x-circle"></i> Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

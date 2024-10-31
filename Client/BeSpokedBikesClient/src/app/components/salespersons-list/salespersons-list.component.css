@@ -1,0 +1,21 @@
+.container {
+  margin-top: 30px;
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.table {
+  margin: 0;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+}

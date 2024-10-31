@@ -1,0 +1,95 @@
+<div class="container mt-5">
+  <div class="card shadow-lg p-4" style="max-width: 600px; margin: auto; border-radius: 10px;">
+    <div class="card-body">
+      <h3 class="card-title text-center text-primary mb-4">Create New Sale</h3>
+
+      <form (ngSubmit)="createSale()">
+        <div class="mb-3">
+          <label for="product" class="form-label">Product ID</label>
+          <input
+            type="number"
+            id="product"
+            [(ngModel)]="sale.product.id"
+            class="form-control"
+            name="product"
+            placeholder="Enter Product ID"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="customer" class="form-label">Customer ID</label>
+          <input
+            type="number"
+            id="customer"
+            [(ngModel)]="sale.customer.id"
+            class="form-control"
+            name="customer"
+            placeholder="Enter Customer ID"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="salesperson" class="form-label">Salesperson ID</label>
+          <input
+            type="number"
+            id="salesperson"
+            [(ngModel)]="sale.salesperson.id"
+            class="form-control"
+            name="salesperson"
+            placeholder="Enter Salesperson ID"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="salesDate" class="form-label">Sales Date</label>
+          <input
+            type="date"
+            id="salesDate"
+            [(ngModel)]="sale.salesDate"
+            class="form-control"
+            name="salesDate"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="price" class="form-label">Price</label>
+          <input
+            type="number"
+            id="price"
+            [(ngModel)]="sale.price"
+            class="form-control"
+            name="price"
+            placeholder="Enter Price"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="commission" class="form-label">Commission</label>
+          <input
+            type="number"
+            id="commission"
+            [(ngModel)]="sale.commission"
+            class="form-control"
+            name="commission"
+            placeholder="Enter Commission Percentage"
+            required
+          />
+        </div>
+
+        <div class="d-flex justify-content-between mt-4">
+          <button type="submit" class="btn btn-primary w-45" style="border-radius: 5px;">
+            <i class="bi bi-check-circle"></i> Create Sale
+          </button>
+          <button type="button" class="btn btn-secondary w-45" (click)="cancel()" style="border-radius: 5px;">
+            <i class="bi bi-x-circle"></i> Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

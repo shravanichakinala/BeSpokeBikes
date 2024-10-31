@@ -1,0 +1,38 @@
+<div class="container mt-5">
+  <div class="card shadow-sm">
+    <div class="card-header bg-primary text-white text-center">
+      <h4>Salesperson List</h4>
+    </div>
+    <div class="card-body">
+      <table class="table table-hover table-bordered">
+        <thead class="table-light">
+          <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Address</th>
+            <th scope="col">Manager</th>
+            <th scope="col" class="text-center">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let salesperson of salespersons">
+            <td>{{ salesperson.firstName }}</td>
+            <td>{{ salesperson.lastName }}</td>
+            <td>{{ salesperson.phone }}</td>
+            <td>{{ salesperson.address }}</td>
+            <td>{{ salesperson.manager }}</td>
+            <td class="text-center">
+              <button class="btn btn-primary btn-sm" (click)="editSalesperson(salesperson.id)">
+                <i class="bi bi-pencil-square"></i> Edit
+              </button>
+              <!-- <button class="btn btn-danger btn-sm ms-2" (click)="deleteSalesperson(salesperson.id)">
+                <i class="bi bi-trash"></i> Delete
+              </button> -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

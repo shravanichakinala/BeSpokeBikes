@@ -1,0 +1,33 @@
+<div class="container mt-5">
+  <h3>Sales List</h3>
+  <div class="mb-3">
+    <label>Start Date:</label>
+    <input type="date" [(ngModel)]="startDate" class="form-control">
+    <label>End Date:</label>
+    <input type="date" [(ngModel)]="endDate" class="form-control">
+    <button class="btn btn-primary mt-3" (click)="getSales()">Filter Sales</button>
+  </div>
+
+  <table class="table table-bordered">
+    <thead class="table-light">
+      <tr>
+        <th>Product</th>
+        <th>Customer</th>
+        <th>Date</th>
+        <th>Price</th>
+        <th>Salesperson</th>
+        <th>Commission</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let sale of sales">
+        <td>{{ sale.product.name }}</td>
+        <td>{{ sale.customer.firstName }} {{ sale.customer.lastName }}</td>
+        <td>{{ sale.salesDate }}</td>
+        <td>{{ sale.price }}</td>
+        <td>{{ sale.salesperson.firstName }} {{ sale.salesperson.lastName }}</td>
+        <td>{{ sale.commission }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

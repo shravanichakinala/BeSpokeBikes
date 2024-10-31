@@ -1,0 +1,36 @@
+<div class="container mt-5">
+  <div class="card shadow-sm">
+    <div class="card-header bg-primary text-white">
+      <h2 class="mb-0">Customers List</h2>
+    </div>
+    <div class="card-body">
+      <table class="table table-hover table-bordered mt-3">
+        <thead class="table-light">
+          <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Start Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let customer of customers">
+            <td>{{ customer.id }}</td>
+            <td>{{ customer.firstName }}</td>
+            <td>{{ customer.lastName }}</td>
+            <td>{{ customer.address }}</td>
+            <td>{{ customer.phone }}</td>
+            <td>{{ customer.startDate | date: 'yyyy-MM-dd' }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- No Data Message -->
+      <div *ngIf="customers.length === 0" class="alert alert-info text-center">
+        No customers found.
+      </div>
+    </div>
+  </div>
+</div>
