@@ -15,15 +15,7 @@ import pro.bike.profisee.entity.Sales;
 public interface SalesRepository extends JpaRepository<Sales, Long> {
 	
     List<Sales> findBySalesDateBetween(LocalDate startDate, LocalDate endDate);
-    
-//    @Query("SELECT pro.bike.profisee.entity.QuarterlyCommissionReport(s.salesperson.id, s.salesperson.firstName, s.salesperson.lastName, " +
-//            "FUNCTION('QUARTER', s.salesDate), YEAR(s.salesDate), SUM(s.commission)) " +
-//            "FROM Sales s " +
-//            "WHERE s.salesDate BETWEEN :startDate AND :endDate " +
-//            "GROUP BY s.salesperson.id, YEAR(s.salesDate), FUNCTION('QUARTER', s.salesDate)")
-//     List<QuarterlyCommissionReport> findQuarterlyCommissions(@Param("startDate") LocalDate startDate, @Param("endDate") LocalDate endDate);
-// 
-//    
+      
  
     @Query("SELECT s.salesperson.id AS salespersonId, " +
     	       "s.salesperson.firstName AS salespersonFirstName, " +

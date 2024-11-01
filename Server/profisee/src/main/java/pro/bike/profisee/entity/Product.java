@@ -20,8 +20,7 @@ public class Product {
     private BigDecimal salePrice;
     private int qtyOnHand;
     private BigDecimal commissionPercentage;
-    
-    
+      
     public Long getId() {
 		return id;
 	}

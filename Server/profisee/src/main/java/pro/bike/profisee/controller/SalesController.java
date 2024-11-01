@@ -42,19 +42,17 @@ public class SalesController {
 	        return salesService.getAllSales();
 	    }
 
-	    
 	    @GetMapping("/by-date")
 	    public List<Sales> getSalesByDateRange(
 	            @RequestParam("startDate") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) String startDateStr,
 	            @RequestParam("endDate") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) String endDateStr) {
 	        
-	        // Trim any extra whitespace from date parameters
+	    
 	        LocalDate startDate = LocalDate.parse(startDateStr.trim());
 	        LocalDate endDate = LocalDate.parse(endDateStr.trim());
 	        
 	        return salesService.getSalesByDateRange(startDate, endDate);
-	    }
-	    
+	    }	    
 	    
 	    @PostMapping("/createSale")
 	    public ResponseEntity<Sales> createSale(@RequestBody Sales sale) {
@@ -75,10 +73,10 @@ public class SalesController {
 	        Salesperson updated = salesService.updateSalesperson(id, updatedSalesperson);
 	        
 	        if (updated == null) {
-	            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);  // Return 404 if not found
+	            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null); 
 	        }
 	        
-	        return ResponseEntity.ok(updated);  // Return 200 OK with updated data if successful
+	        return ResponseEntity.ok(updated);  
 	    }
 	
 	    
@@ -90,9 +88,7 @@ public class SalesController {
 	            return ResponseEntity.notFound().build();
 	        }
 	        return ResponseEntity.ok(salesperson);
-	    }
-
-	    
+	    }    
 	    
 	    @GetMapping("/products")
 	    public List<Product> getAllProducts() {
@@ -105,8 +101,7 @@ public class SalesController {
 	        Product updated = salesService.updateProduct(id, updatedProduct);
 	        return ResponseEntity.ok(updated);
 	    }
-	    
-	    
+	    	    
 	    @GetMapping("/commission-report")
 	    public List<QuarterlyCommissionProjection> getQuarterlyCommissionReport(
 	            @RequestParam("startDate") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate startDate,

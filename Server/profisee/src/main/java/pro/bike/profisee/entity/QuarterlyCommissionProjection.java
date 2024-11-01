@@ -1,7 +1,7 @@
 package pro.bike.profisee.entity;
 
 public interface QuarterlyCommissionProjection {
-	  Long getSalespersonId();
+	    Long getSalespersonId();
 	    String getSalespersonFirstName();
 	    String getSalespersonLastName();
 	    Integer getQuarter();

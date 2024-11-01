@@ -41,7 +41,7 @@ public class Sales {
 	                '}';
 	    }
 
-	    public Long getId() {
+	public Long getId() {
 		return id;
 	}
 	public void setId(Long id) {

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(DuplicateEntryException.class)
-    @ResponseStatus(HttpStatus.CONFLICT) // 409 Conflict
+    @ResponseStatus(HttpStatus.CONFLICT) 
     public String handleDuplicateEntryException(DuplicateEntryException ex) {
         return ex.getMessage();
     }

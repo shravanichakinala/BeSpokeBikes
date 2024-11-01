@@ -106,28 +106,28 @@ public class DataInitializer {
 
 	        // Seed Salespersons
 	        Salesperson salesperson1 = new Salesperson();
-	        salesperson1.setFirstName("John");
-	        salesperson1.setLastName("Doe");
+	        salesperson1.setFirstName("Aarav");
+	        salesperson1.setLastName("Patel");
 	        salesperson1.setAddress("123 Main St");
-	        salesperson1.setPhone("555-1234");
+	        salesperson1.setPhone("555-123-4565");
 	        salesperson1.setStartDate(LocalDate.of(2022, 1, 1));
 	        salesperson1.setManager("Manager A");
 	        salespersonRepository.save(salesperson1);
 
 	        Salesperson salesperson2 = new Salesperson();
-	        salesperson2.setFirstName("Jane");
-	        salesperson2.setLastName("Smith");
+	        salesperson2.setFirstName("Priya");
+	        salesperson2.setLastName("Sharma");
 	        salesperson2.setAddress("456 Oak St");
-	        salesperson2.setPhone("555-5678");
+	        salesperson2.setPhone("555-567-7865");
 	        salesperson2.setStartDate(LocalDate.of(2021, 5, 10));
 	        salesperson2.setManager("Manager B");
 	        salespersonRepository.save(salesperson2);
 
 	        Salesperson salesperson3 = new Salesperson();
-	        salesperson3.setFirstName("Mike");
-	        salesperson3.setLastName("Johnson");
+	        salesperson3.setFirstName("Raj");
+	        salesperson3.setLastName("Kapoor");
 	        salesperson3.setAddress("789 Pine St");
-	        salesperson3.setPhone("555-8765");
+	        salesperson3.setPhone("555-876-7865");
 	        salesperson3.setStartDate(LocalDate.of(2020, 3, 15));
 	        salesperson3.setManager("Manager C");
 	        salespersonRepository.save(salesperson3);
@@ -136,16 +136,16 @@ public class DataInitializer {
 	        salesperson4.setFirstName("Emily");
 	        salesperson4.setLastName("Davis");
 	        salesperson4.setAddress("321 Cedar St");
-	        salesperson4.setPhone("555-2345");
+	        salesperson4.setPhone("555-234-8798");
 	        salesperson4.setStartDate(LocalDate.of(2021, 11, 22));
 	        salesperson4.setManager("Manager A");
 	        salespersonRepository.save(salesperson4);
 
 	        Salesperson salesperson5 = new Salesperson();
-	        salesperson5.setFirstName("Chris");
-	        salesperson5.setLastName("Lee");
+	        salesperson5.setFirstName("Sita");
+	        salesperson5.setLastName("Rao");
 	        salesperson5.setAddress("654 Maple St");
-	        salesperson5.setPhone("555-4321");
+	        salesperson5.setPhone("555-432-9089");
 	        salesperson5.setStartDate(LocalDate.of(2022, 6, 1));
 	        salesperson5.setManager("Manager B");
 	        salespersonRepository.save(salesperson5);
@@ -154,7 +154,7 @@ public class DataInitializer {
 	        salesperson6.setFirstName("Sarah");
 	        salesperson6.setLastName("Brown");
 	        salesperson6.setAddress("987 Birch St");
-	        salesperson6.setPhone("555-6789");
+	        salesperson6.setPhone("555-678-8987");
 	        salesperson6.setStartDate(LocalDate.of(2019, 9, 10));
 	        salesperson6.setManager("Manager C");
 	        salespersonRepository.save(salesperson6);
@@ -163,16 +163,16 @@ public class DataInitializer {
 	        salesperson7.setFirstName("David");
 	        salesperson7.setLastName("Wilson");
 	        salesperson7.setAddress("159 Spruce St");
-	        salesperson7.setPhone("555-9876");
+	        salesperson7.setPhone("555-987-0909");
 	        salesperson7.setStartDate(LocalDate.of(2023, 2, 5));
 	        salesperson7.setManager("Manager A");
 	        salespersonRepository.save(salesperson7);
 
 	        Salesperson salesperson8 = new Salesperson();
 	        salesperson8.setFirstName("Anna");
-	        salesperson8.setLastName("Miller");
+	        salesperson8.setLastName("Guptha");
 	        salesperson8.setAddress("753 Elm St");
-	        salesperson8.setPhone("555-6543");
+	        salesperson8.setPhone("555-654-2321");
 	        salesperson8.setStartDate(LocalDate.of(2021, 8, 25));
 	        salesperson8.setManager("Manager B");
 	        salespersonRepository.save(salesperson8);
@@ -185,23 +185,23 @@ public class DataInitializer {
 	        customer1.setFirstName("Dawn");
 	        customer1.setLastName("Mock");
 	        customer1.setAddress("345 Main St");
-	        customer1.setPhone("555-8765");
+	        customer1.setPhone("555-876-9089");
 	        customer1.setStartDate(LocalDate.of(2023, 1, 1));
 	        customerRepository.save(customer1);
 
 	        Customer customer2 = new Customer();
-	        customer2.setFirstName("Bill");
-	        customer2.setLastName("Maro");
+	        customer2.setFirstName("Adithi");
+	        customer2.setLastName("Verma");
 	        customer2.setAddress("225 Main St");
-	        customer2.setPhone("555-555");
+	        customer2.setPhone("555-555-4050");
 	        customer2.setStartDate(LocalDate.of(2023, 1, 1));
 	        customerRepository.save(customer2);
 
 	        Customer customer3 = new Customer();
-	        customer3.setFirstName("Sarah");
-	        customer3.setLastName("Connor");
+	        customer3.setFirstName("Arjun");
+	        customer3.setLastName("Singh");
 	        customer3.setAddress("789 Elm St");
-	        customer3.setPhone("555-1234");
+	        customer3.setPhone("555-123-4543");
 	        customer3.setStartDate(LocalDate.of(2022, 6, 15));
 	        customerRepository.save(customer3);
 
@@ -209,7 +209,7 @@ public class DataInitializer {
 	        customer4.setFirstName("Michael");
 	        customer4.setLastName("Jordan");
 	        customer4.setAddress("432 Oak St");
-	        customer4.setPhone("555-6789");
+	        customer4.setPhone("555-678-9999");
 	        customer4.setStartDate(LocalDate.of(2021, 9, 5));
 	        customerRepository.save(customer4);
 
@@ -217,7 +217,7 @@ public class DataInitializer {
 	        customer5.setFirstName("Jessica");
 	        customer5.setLastName("Smith");
 	        customer5.setAddress("567 Pine St");
-	        customer5.setPhone("555-4321");
+	        customer5.setPhone("555-432-8238");
 	        customer5.setStartDate(LocalDate.of(2020, 11, 20));
 	        customerRepository.save(customer5);
 
@@ -225,7 +225,7 @@ public class DataInitializer {
 	        customer6.setFirstName("Robert");
 	        customer6.setLastName("Brown");
 	        customer6.setAddress("123 Maple St");
-	        customer6.setPhone("555-8765");
+	        customer6.setPhone("555-876-9765");
 	        customer6.setStartDate(LocalDate.of(2019, 3, 10));
 	        customerRepository.save(customer6);
 
@@ -233,15 +233,15 @@ public class DataInitializer {
 	        customer7.setFirstName("Emily");
 	        customer7.setLastName("Wilson");
 	        customer7.setAddress("222 Cedar St");
-	        customer7.setPhone("555-2345");
+	        customer7.setPhone("555-234-2030");
 	        customer7.setStartDate(LocalDate.of(2022, 12, 1));
 	        customerRepository.save(customer7);
 
 	        Customer customer8 = new Customer();
-	        customer8.setFirstName("John");
-	        customer8.setLastName("Doe");
+	        customer8.setFirstName("vivek");
+	        customer8.setLastName("sami");
 	        customer8.setAddress("890 Birch St");
-	        customer8.setPhone("555-7890");
+	        customer8.setPhone("555-789-1040");
 	        customer8.setStartDate(LocalDate.of(2021, 5, 20));
 	        customerRepository.save(customer8);
 	        
